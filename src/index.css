@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: visible;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  max-width: 50%;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.hands {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.hands img {
+  max-width: 100%;
+}
+
+.content {
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.pumps {
+  max-width: 80%;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.footer {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer div {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+}
+.footer div a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.fa,
+.fas,
+.fab {
+  position: absolute;
+  transform: scale(1.4);
+  top: 30%;
+  left: -20%;
+}
+
+.break {
+  font-weight: 700;
+  color: red;
+}
+
+@media (max-width: 700px) {
+  * {
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .hands img {
+    height: 50vh;
+  }
+  .content {
+    margin-left: 30px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
